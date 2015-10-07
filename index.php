@@ -51,6 +51,9 @@
 					<select name="pais" class="form-control">
 						<option value="">Seleccionar pais</option>
 						<option value="pe">Perú</option>
+						<option value="bo">Bolivia</option>
+						<option value="eu">USA</option>
+						<option value="jp">Japón</option>
 					</select>
 				</fieldset>
 
