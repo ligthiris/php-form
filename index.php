@@ -1,3 +1,7 @@
+<?php
+	include_once("paises.php")
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -50,11 +54,9 @@
 
 					<select name="pais" class="form-control">
 						<option value="">Seleccionar pais</option>
-						<option value="pe">Perú</option>
-						<option value="bo">Bolivia</option>
-						<option value="eu">USA</option>
-						<option value="jp">Japón</option>
-					</select>
+						<?php foreach(listaPaises() as $clave => $valor) { ?>
+						<option value="<?=$clave?>"><?=$valor?></option>
+						<?php } ?>
 				</fieldset>
 
 				<div class="checkbox">
